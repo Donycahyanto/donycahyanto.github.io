@@ -49,4 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 7. Set active link saat pertama kali dimuat
     setActiveLink();    // Jalankan setActiveLink saat halaman dimuat
+
+    // 8. Close menu ketika klik di luar menu (Hamburger Menu)
+    document.addEventListener('click', (event) => {
+        if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
+            menuIcon.classList.remove('bx-x');   // Menghapus class 'bx-x' dari icon
+            navbar.classList.remove('active');   // Menutup menu
+        }
+    });
 });
