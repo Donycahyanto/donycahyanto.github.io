@@ -114,7 +114,7 @@ html::-webkit-scrollbar-thumb {
 
 section {
   min-height: 100vh;
-  padding: 5rem 9% 5rem;
+  padding: 11rem 9% 5rem;
 }
 .home {
   display: flex;
@@ -776,7 +776,7 @@ footer .copyright {
 
 /* Portfolio section */
 .portfolio {
-  padding: 5rem 0;
+  padding: 11rem 9% 5rem;
 }
 
 .portfolio .heading {
