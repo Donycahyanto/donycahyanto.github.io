@@ -754,3 +754,13 @@ footer .copyright {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .portfolio, .home img {
+    margin-top: 10px;
+  }
+}
