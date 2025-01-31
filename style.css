@@ -122,11 +122,13 @@ section {
   align-items: center;
   gap: 8rem;
   background: var(--bg-color);
+  padding: 5rem 10%; /* Menambah padding untuk memberi ruang */
 }
 .home .home-content {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.3;
+  margin-left: 5rem; /* Menyesuaikan jarak teks ke kanan */
 }
 span {
   color: var(--main-color);
@@ -302,6 +304,7 @@ span {
   .home {
     flex-direction: column;
     margin: 5rem 4rem;
+    align-items: center; /* Pastikan konten tetap di tengah pada layar kecil */
   }
   .home .home-content h3 {
     font-size: 2.5rem;
@@ -319,7 +322,7 @@ span {
 @media (min-width: 769px) {
   .home-img img {
     width: 30vw; /* Sesuaikan ukuran gambar untuk desktop atau laptop */
-    margin-top: -1rem; /* Sesuaikan margin atas untuk memberi jarak dari header */
+    margin-top: 4rem; /* Sesuaikan margin atas untuk memberi jarak dari header */
   }
 }
 
