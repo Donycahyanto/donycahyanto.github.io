@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 3rem 9%;
+  padding: 2rem 9%;
   background: rgba(0, 0, 0, 0.7);
   filter: drop-shadow(10px);
   display: flex;
@@ -319,7 +319,7 @@ span {
 @media (min-width: 769px) {
   .home-img img {
     width: 30vw; /* Sesuaikan ukuran gambar untuk desktop atau laptop */
-    margin-top: 5rem; /* Sesuaikan margin atas untuk memberi jarak dari header */
+    margin-top: -1rem; /* Sesuaikan margin atas untuk memberi jarak dari header */
   }
 }
 
