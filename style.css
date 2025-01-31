@@ -779,12 +779,6 @@ footer .copyright {
   padding: 11rem 9% 5rem;
 }
 
-.portfolio .heading {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .portfolio .row {
   display: flex;
   flex-wrap: wrap;
