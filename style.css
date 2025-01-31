@@ -773,7 +773,7 @@ footer .copyright {
   }
 
   .portfolio, .home img {
-    margin-top: 2px;
+    margin-top: 50px;
   }
 }
 
@@ -849,6 +849,10 @@ footer .copyright {
 
 .portfolio-item:hover img {
   transform: scale(1.1);
+}
+
+.portfolio .heading {
+  margin-bottom: 4rem; /* Sesuaikan dengan kebutuhan */
 }
 
 /* Responsive */
