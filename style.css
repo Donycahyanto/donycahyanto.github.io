@@ -329,7 +329,7 @@ span {
 /* services section */
 
 .services {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 .heading {
   font-size: 4rem;
@@ -423,7 +423,7 @@ span {
 
 /* skills */
 
-.skills {
+/* .skills {
   background: var(--bg-color);
 }
 .skills .container {
@@ -480,7 +480,7 @@ span {
     margin-top: 5px;
     width: 100%;
   }
-}
+} */
 
 /* education section */
 
@@ -777,9 +777,10 @@ footer .copyright {
   }
 }
 
-/* Portfolio section */
-.portfolio {
+/* Project section */
+.project {
   padding: 10rem 9%;
+  background: var(--second-bg-color);
 }
 
 .portfolio-container {
