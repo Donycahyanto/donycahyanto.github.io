@@ -783,10 +783,11 @@ footer .copyright {
 }
 
 .portfolio-container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .portfolio-item {
@@ -795,6 +796,8 @@ footer .copyright {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  max-width: 400px; /* Menetapkan lebar maksimum agar tidak terlalu besar */
+  padding: 15px; /* Memberi ruang agar tidak terlalu penuh */
 }
 
 .portfolio-item a {
