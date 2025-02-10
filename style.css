@@ -799,6 +799,7 @@ footer .copyright {
   transition: transform 0.3s ease;
   max-width: 400px; /* Menetapkan lebar maksimum agar tidak terlalu besar */
   padding: 15px; /* Memberi ruang agar tidak terlalu penuh */
+  justify-content: center;
 }
 
 .portfolio-item a {
@@ -812,6 +813,7 @@ footer .copyright {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  justify-content: center;
 }
 
 .portfolio-img {
@@ -843,6 +845,13 @@ footer .copyright {
   font-weight: bold;
 }
 
+.overlay p {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: justify; /* Set text alignment to left */
+  width: 90%; /* Optional: Adjust width to control text wrapping */
+}
+
 .portfolio-item:hover {
   transform: scale(1.05);
 }
@@ -866,6 +875,10 @@ footer .copyright {
   }
   .portfolio-container {
     grid-template-columns: 1fr;
+  }
+  .portfolio-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
