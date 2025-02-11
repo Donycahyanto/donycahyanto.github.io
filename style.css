@@ -810,7 +810,7 @@ footer .copyright {
 
 .portfolio-item-inner {
   background: #fff;
-  border-radius: 10px;
+  
   overflow: hidden;
   position: relative;
   justify-content: center;
@@ -819,7 +819,7 @@ footer .copyright {
 .portfolio-img {
   width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  
 }
 
 .portfolio-img img {
