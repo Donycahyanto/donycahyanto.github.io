@@ -60,10 +60,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // Untuk serifikat
 function openModal(src) {
-  document.getElementById('modal').style.display = 'block';
-  document.getElementById('modal-pdf').src = src;
-}
-
-function closeModal() {
-  document.getElementById('modal').style.display = 'none';
-}
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal-img").src = src;
+  }
+  function closeModal() {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal-img").src = "";
+  }
+  // Tutup modal saat klik di luar konten
+  document.getElementById("modal").addEventListener("click", function (event) {
+    if (event.target === this) {
+      closeModal();
+    }
+  });
