@@ -59,17 +59,53 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // Untuk serifikat
-function openModal(src) {
+let images = [
+    "Sertifikat1/sertifikat1.pdf.png",
+    "Sertifikat1/sertifikat2.pdf.png",
+    "Sertifikat1/sertifikat3.pdf.png",
+    "Sertifikat1/sertifikat4.pdf.png",
+    "Sertifikat1/sertifikat5.pdf.png"
+  ];
+  let currentIndex = 0;
+  
+  function openModal(index) {
+    currentIndex = index;
     document.getElementById("modal").style.display = "flex";
-    document.getElementById("modal-img").src = src;
+    document.getElementById("modal-img").src = images[currentIndex];
   }
+  
   function closeModal() {
     document.getElementById("modal").style.display = "none";
     document.getElementById("modal-img").src = "";
   }
+  
+  // Navigasi Next & Previous
+  function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    } else if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    document.getElementById("modal-img").src = images[currentIndex];
+  }
+  
   // Tutup modal saat klik di luar konten
-  document.getElementById("modal").addEventListener("click", function (event) {
+  document.getElementById("modal").addEventListener("click", function(event) {
     if (event.target === this) {
       closeModal();
+    }
+  });
+  
+  // Navigasi keyboard (panah kiri/kanan untuk geser gambar)
+  document.addEventListener("keydown", function(event) {
+    if (document.getElementById("modal").style.display === "flex") {
+      if (event.key === "ArrowRight") {
+        changeImage(1);
+      } else if (event.key === "ArrowLeft") {
+        changeImage(-1);
+      } else if (event.key === "Escape") {
+        closeModal();
+      }
     }
   });

@@ -395,6 +395,7 @@ span {
   background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .modal-content {
   max-width: 90%;
@@ -413,6 +414,24 @@ span {
 .close:hover {
   color: #bbb;
   cursor: pointer;
+}
+/* Tombol Next dan Prev */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
+  user-select: none;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  color: #bbb;
 }
 @media (max-width: 768px) {
   .field-certificate {
