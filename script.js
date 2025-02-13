@@ -109,3 +109,21 @@ let images = [
       }
     }
   });
+  // ✨ Menambahkan Gesture Swipe untuk Mobile
+document.getElementById("modal").addEventListener("touchstart", function(event) {
+    touchStartX = event.changedTouches[0].clientX;
+  });
+  
+  document.getElementById("modal").addEventListener("touchend", function(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleSwipe();
+  });
+  
+  function handleSwipe() {
+    let swipeThreshold = 50; // Minimum jarak geser agar dianggap sebagai swipe
+    if (touchStartX - touchEndX > swipeThreshold) {
+      changeImage(1); // Geser ke kanan (next)
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+      changeImage(-1); // Geser ke kiri (prev)
+    }
+  }
